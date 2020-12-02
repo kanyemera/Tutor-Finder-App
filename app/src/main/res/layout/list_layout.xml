@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/tutorPhoto"
+        android:layout_width="100dp"
+        android:layout_height="170dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/profile_pic"
+
+        app:civ_border_color="#FF000000" />
+
+    <TextView
+        android:id="@+id/tvFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="211dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="211dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/tutorPhoto"
+        android:layout_toRightOf="@+id/tutorPhoto"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="91dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvFullName"
+        android:layout_alignRight="@id/tutorPhoto"
+        android:layout_marginBottom="-27dp"
+        android:layout_marginRight="-114dp"
+        android:text="Phone" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvPhoneNumber"
+        android:layout_alignRight="@id/tutorPhoto"
+        android:layout_marginBottom="-36dp"
+        android:layout_marginRight="-94dp"
+        tools:text="Email" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvEmail"
+        android:layout_alignRight="@id/tutorPhoto"
+        android:layout_marginBottom="-24dp"
+        android:layout_marginRight="-96dp"
+        android:text="Address" />
+
+    <TextView
+        android:id="@+id/tvSubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvAddress"
+        android:layout_alignRight="@id/tutorPhoto"
+        android:layout_marginBottom="-33dp"
+        android:layout_marginRight="-115dp"
+        android:text="Subject" />
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvSubject"
+        android:layout_alignRight="@id/tutorPhoto"
+        android:layout_marginBottom="-27dp"
+        android:layout_marginRight="-83dp"
+        android:text="Price" />
+
+
+</RelativeLayout>

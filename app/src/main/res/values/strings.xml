@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Tutor Finder App</string>
+
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="apptitle">Tutor Finder</string>
+    <string name="shortnote">Easiest Way To Find Tutor</string>
+
+    <string name="alttext">App Logo</string>
+    <string name="fontname">Verdana</string>
+
+    <string name="passwordhint">Enter email</string>
+    <string name="usernamehint">Enter password</string>
+
+    <string name="forgethint">Forgot Password?</string>
+    <string name="loginbtnText">Login</string>
+
+    <string name="account_prompt">Choose account type</string>
+    <string-array name="account_type">
+        <item>Student</item>
+        <item>Tutor</item>
+    </string-array>
+
+</resources>

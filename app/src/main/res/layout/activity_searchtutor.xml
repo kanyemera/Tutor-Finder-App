@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchtutorActivity">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:id="@+id/heading_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Tutors Here" />
+
+    <EditText
+        android:id="@+id/search_field"
+        android:layout_marginLeft="30dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/heading_label"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/search_layout"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        tools:text="Search Here" />
+
+    <ImageButton
+        android:id="@+id/searchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/search_field"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="-44dp"
+        android:layout_marginTop="60dp"
+        android:background="#ffffff"
+        app:srcCompat="@drawable/search_btn_40" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/result_list"
+        android:layout_width="389dp"
+        android:layout_height="84dp"
+        android:layout_alignBottom="@id/searchBtn"
+        android:layout_marginBottom="-111dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

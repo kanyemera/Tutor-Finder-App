@@ -1,0 +1,86 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.example.tutorfinderapp"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    //implementation 'androidx.appcompat:recyclerview:1.2.0'
+
+    //implementation 'androidx.appcompat:cardview:1.2.0'
+
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-firestore:22.0.0'
+    implementation 'com.google.firebase:firebase-storage:19.2.0'
+
+    //implementation 'com.google.firebase:firebase-analytics'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    //implementation 'com.google.firebase:firebase-core:11.6.2'
+    //implementation 'com.google.firebase:firebase-auth:11.6.2'
+    //implementation 'com.google.firebase:firebase-core:16.0.3'
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+
+
+    //implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:multidex:2.0.0'
+
+    //circle imageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+  annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+  implementation 'com.firebaseui:firebase-ui-storage:3.3.0'
+    //implementation 'com.firebaseui:firebase-ui-storage:3.2.1'
+    implementation 'com.firebaseui:firebase-ui-firestore:3.3.0'
+    implementation 'com.firebaseui:firebase-ui-database:3.3.0'
+
+    annotationProcessor 'androidx.annotation:annotation:1.1.0'
+
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+    // for real-time database
+    implementation 'com.google.firebase:firebase-database:16.0.3'
+
+    //implementation "com.google.firebase:firebase-database:16.0.1"
+    implementation "com.google.android.gms:play-services-maps:15.0.1"
+
+
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'
